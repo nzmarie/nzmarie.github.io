@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="NZ Marie&#39;s Blog">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="/img/ai-human.jpeg">
+    <meta property="twitter:image" content="/img/ai-human.jpeg" />
+    
+
+    
+    <meta name="title" content="Will AI Completely Replace Human Developers?" />
+    <meta property="og:title" content="Will AI Completely Replace Human Developers?" />
+    <meta property="twitter:title" content="Will AI Completely Replace Human Developers?" />
+    
+
+    
+    <meta name="description" content="This article proposes a novel &#39;Five Levels of AI-ization&#39; framework inspired by self-driving cars, predicting AI&#39;s potential impact on software development. Expect AI to become a powerful partner, automating routine tasks and boosting efficiency, not replacing human creativity and strategic thinking. Dive in to explore the future of AI and developers, working together to build the next generation of software.">
+    <meta property="og:description" content="This article proposes a novel &#39;Five Levels of AI-ization&#39; framework inspired by self-driving cars, predicting AI&#39;s potential impact on software development. Expect AI to become a powerful partner, automating routine tasks and boosting efficiency, not replacing human creativity and strategic thinking. Dive in to explore the future of AI and developers, working together to build the next generation of software." />
+    <meta property="twitter:description" content="This article proposes a novel &#39;Five Levels of AI-ization&#39; framework inspired by self-driving cars, predicting AI&#39;s potential impact on software development. Expect AI to become a powerful partner, automating routine tasks and boosting efficiency, not replacing human creativity and strategic thinking. Dive in to explore the future of AI and developers, working together to build the next generation of software." />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="NZ Marie, Marie Lu, Marie, Marie&#39;s Blog, blog, real estate">
+    <link rel="shortcut icon" href="/blog/img/l.ico">
+
+    <title>Will AI Completely Replace Human Developers? | NZ Marie&#39;s Blog</title>
+
+    <link rel="canonical" href="/blog/2024/01/10/will-ai-replace-human-developers/">
+
+    
+    
+    
+    <link rel="stylesheet" href="/blog/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/blog/css/hugo-theme-cleanwhite.min.css">
+
+    
+    <link rel="stylesheet" href="/blog/css/zanshang.css">
+
+    
+    <link rel="stylesheet" href="/blog/css/font-awesome.all.min.css">
+
+    
+    
+
+    
+    <script src="/blog/js/jquery.min.js"></script>
+
+    
+    <script src="/blog/js/bootstrap.min.js"></script>
+
+    
+    <script src="/blog/js/hux-blog.min.js"></script>
+
+    
+    <script src="/blog/js/lazysizes.min.js"></script>
+
+    
+    
+
+</head>
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1DGLP9VEBT"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-1DGLP9VEBT', { 'anonymize_ip': false });
+}
+</script>
+
+
+
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/blog">NZ Marie&#39;s Blog</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/blog">All Posts</a>
+                    </li>
+                    
+                        
+                        
+                        
+                    
+                    <li>
+                        <a href="/blog/categories/tech">Tech</a>
+                    </li>
+                    <li>
+                        <a href="/blog/categories/life">Life</a>
+                    </li>
+		            
+                        <li><a href="/blog/archive/">ARCHIVE</a></li>
+                    
+                    <li>
+                        <a href="https://nzmarie.com" >About</a>
+                    </li>
+		            <li>
+                        <a href="/blog/search"><i class="fa fa-search"></i></a>
+		           </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/ai-human.jpeg')
+    }
+</style>
+
+<header class="intro-header" >
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/ai" title="ai">
+                            ai
+                        </a>
+                        
+                        <a class="tag" href="/tags/developer" title="Developer">
+                            Developer
+                        </a>
+                        
+                        <a class="tag" href="/tags/replace-human" title="Replace Human">
+                            Replace Human
+                        </a>
+                        
+                    </div>
+                    <h1>Will AI Completely Replace Human Developers?</h1>
+                    <h2 class="subheading"> A Look at the Future</h2>
+                    <span class="meta">
+                        
+                            Posted by 
+                            
+                                    &#34;Louis Lu&#34;
+                             
+                            on 
+                            Wednesday, January 10, 2024
+                            
+                            
+                            
+                            
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                <h2 id="abstract">Abstract</h2>
+<p>Will AI code robots steal programmers&rsquo; jobs? Not so fast. This article proposes a novel &ldquo;Five Levels of AI-ization&rdquo; framework inspired by self-driving cars, predicting AI&rsquo;s potential impact on software development. Expect AI to become a powerful partner, automating routine tasks and boosting efficiency, not replacing human creativity and strategic thinking. Dive in to explore the future of AI and developers, working together to build the next generation of software.</p>
+<h2 id="five-levels-of-self-driving-cars">Five levels of self-driving cars</h2>
+<p>To better understand the role of AI in software development, we can compare it to the five levels of self-driving cars. The five levels of self-driving cars are classified according to their ability to autonomously perform driving tasks.</p>
+<ul>
+<li><strong>Level 0: No automation:</strong> At this level, the driver is in complete control of the vehicle.</li>
+<li><strong>Level 1: Driver assistance:</strong> At this level, the vehicle can perform certain specific tasks, such as cruise control or lane keeping, but the driver still needs to maintain control and supervision of the vehicle.</li>
+<li><strong>Level 2: Partial automation:</strong> At this level, the vehicle can simultaneously perform multiple automated tasks, such as cruise control and lane keeping. The driver still needs to maintain control and supervision of the vehicle, but in some cases, the system may allow for short periods of unmanned driving.</li>
+<li><strong>Level 3: Conditional automation:</strong> At this level, the vehicle can perform all driving tasks in certain conditions, while the driver can choose to release control of the vehicle. However, the driver needs to be ready to intervene at any time in response to system requests.</li>
+<li><strong>Level 4: High automation:</strong> At this level, the vehicle is capable of fully autonomous driving in specific environments, without driver intervention.</li>
+<li><strong>Level 5: Full automation:</strong> At this level, the vehicle is capable of fully performing all driving tasks in any condition, without human drivers.</li>
+</ul>
+<h2 id="five-levels-of-ai-ization-of-software-development">Five levels of AI-ization of software development</h2>
+<p>We can compare the role of AI in software development to the five levels of self-driving cars.</p>
+<ul>
+<li><strong>Level 0: No automation:</strong> At this level, developers are fully responsible for coding and development, with no AI involvement.</li>
+<li><strong>Level 1: Code generation assistance:</strong> At this level, AI provides code snippets generation at some basic levels, such as basic functions and modules, but the overall structure and logic of the application are still dominated by humans.</li>
+<li><strong>Level 2: Method/function level code generation:</strong> At this level, AI can generate method or function level code to implement some specific tasks. Developers are still responsible for the overall architecture and combining these functions to complete the application.</li>
+<li><strong>Level 3: Component level code generation:</strong> At this level, AI can generate more complex code components, such as generating components with reference code and test cases. However, in the overall application architecture and more complex logic, human intervention may still be required.</li>
+<li><strong>Level 4: Full front-end and back-end code generation:</strong> At this level, AI can generate front-end and back-end related code, and can perform simple debugging and testing. In the overall architecture, AI can make some decisions, but in complex architectures and special cases, human developer assistance may be required.</li>
+<li><strong>Level 5: Full automation:</strong> At this level, AI is fully responsible for generating all levels of commercial code, including front-end, back-end, database, etc. It can handle complex logic, architectural decisions, and special cases without human developer intervention.</li>
+</ul>
+<h2 id="current-ai-capabilities">Current AI capabilities</h2>
+<p>The widespread adoption of tools such as GPT4, Bard, and Bing AI has highlighted their robust code-generation capabilities, enabling users to generate answers for questions in the LeetCode database across multiple programming languages. Presently, AI capabilities can be likened to Level 2 automation seen in self-driving cars. These AI tools specialize in generating methods, classes, and test cases, providing valuable support to developers in the coding process.</p>
+<p>It&rsquo;s important to note that, akin to Level 2 autonomy in self-driving vehicles, AI is currently limited in its proficiency. Despite excelling in specific tasks, it falls short of achieving complete automation and still necessitates human oversight. This parallel advancement raises concerns among developers regarding the potential implications for their roles.</p>
+<h2 id="comparing-development-with-self-driving-car-difficulty">Comparing development with self-driving car difficulty</h2>
+<p>Autonomous driving and software development are both complex tasks that require AI to help improve efficiency and quality. However, these two tasks have significant differences in difficulty.</p>
+<p>The difficulty of autonomous driving lies mainly in the need to process complex environmental information and make quick decisions. AI needs to be able to understand the surrounding roads, traffic conditions, pedestrians, and other vehicles, and make the right judgments in an instant.</p>
+<p>Software development is more difficult, mainly in the following aspects:</p>
+<ul>
+<li><strong>Requirement understanding:</strong> Software development needs to understand user requirements and translate them into specific functions and implementation methods. This is very difficult for complex requirements.</li>
+<li><strong>Design and architecture:</strong> Software development needs to design and architect a reasonable system to meet user needs. This requires developers to have a wealth of experience and knowledge.</li>
+<li><strong>Code writing:</strong> Software development needs to write correct, efficient, and maintainable code. This requires developers to have good programming skills and experience.</li>
+<li><strong>Testing and debugging:</strong> Software development needs to test and debug the code to ensure that it meets requirements and has no errors or vulnerabilities. This requires developers to have patience and attention to detail.</li>
+</ul>
+<p>Therefore, I believe that software development is much more difficult than autonomous driving. Even if AI can reach Level 5, it is impossible to completely replace human developers.</p>
+<h2 id="my-opinion">My opinion</h2>
+<p>I believe that the current AI code generation capabilities are far from reaching the level of replacing human engineers. AI faces some challenges when generating code:</p>
+<ul>
+<li><strong>Understanding requirements:</strong> AI needs to be able to understand the developer&rsquo;s requirements and generate code that meets the requirements. This is very difficult for complex requirements.</li>
+<li><strong>Generating high-quality code:</strong> AI-generated code may contain errors or vulnerabilities. Human developers need to review and test the generated code.</li>
+<li><strong>Adapting to changes:</strong> Software development is a constantly changing field. AI needs to be able to adapt to new technologies and new requirements.</li>
+</ul>
+<p>Therefore, I believe that AI will not completely replace human developers in the short term. AI will be used as a tool for developers to help them improve their efficiency and quality.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>In conclusion, I believe that it will be a long time before AI can reach the level of Level 5 automation in development. Human developers will still play an important role in software development.</p>
+<h2 id="future-trends">Future trends</h2>
+<p>In the future, software development will be a field where human developers and AI work together. Human developers will use AI&rsquo;s strengths to improve their efficiency and quality, and focus more on innovation.</p>
+<p>As AI technology continues to develop, AI&rsquo;s code generation capabilities may gradually improve. However, even if AI can reach Level 5, it is impossible to completely replace human developers. Human developers will still need to play an important role in the following areas:</p>
+<ul>
+<li><strong>Requirement understanding:</strong> Human developers can understand complex requirements and translate them into a form that AI can understand.</li>
+<li><strong>Code review:</strong> Human developers need to review AI-generated code to ensure that it meets requirements and has no errors or vulnerabilities.</li>
+<li><strong>Innovation:</strong> Human developers can continue to innovate and create new software and technologies.</li>
+</ul>
+<p>Therefore, I believe that the future of software development will be a field where human developers and AI work together. Human developers will use AI&rsquo;s strengths to improve their efficiency and quality, and focus more on innovation.</p>
+
+
+                
+
+                
+                
+
+
+
+            </div>
+
+            
+            
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+            
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                </section>
+                
+
+                
+                
+                <section>
+                    <hr>
+                    <h5>FRIENDS</h5>
+                    <ul class="list-inline">
+                        
+                        <li><a target="_blank" href="https://blog.nzlouis.com">NZ Louis&#39; blog</a></li>
+                        
+                    </ul>
+                </section>
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">                  
+                    
+                    <li>
+                        <a href="mailto:namarie.com@gmail.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		           
+                    
+
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/ailouislu">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		            
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/nzmarie">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		           
+                    
+                    
+                    
+                    
+                    
+            
+            
+            
+             </ul>
+		        <p class="copyright text-muted">
+                    Copyright &copy; NZ Marie&#39;s Blog 2024
+                    <br>
+                     by <a href="https://nzlouis.com">NZ Louis</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function loadAsync(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        loadAsync("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    loadAsync("https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        
+        
+        
+        
+            _containerSelector = 'div.post-container'
+        
+
+        
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        
+        $(selector).html('')
+
+        
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    
+
+
+    loadAsync("\/blog\/js\/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+
+
+
+</body>
+</html>
