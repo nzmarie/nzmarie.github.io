@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on NZ Marie&#39;s Blog</title>
+    <link>https://nzmarie.com/blog/tags/</link>
+    <description>Recent content in Tags on NZ Marie&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 10 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://nzmarie.com/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ai</title>
+      <link>https://nzmarie.com/blog/tags/ai/</link>
+      <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://nzmarie.com/blog/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Developer</title>
+      <link>https://nzmarie.com/blog/tags/developer/</link>
+      <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://nzmarie.com/blog/tags/developer/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Replace Human</title>
+      <link>https://nzmarie.com/blog/tags/replace-human/</link>
+      <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://nzmarie.com/blog/tags/replace-human/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
